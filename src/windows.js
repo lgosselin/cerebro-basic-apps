@@ -25,10 +25,11 @@ export const PATTERNS = []
 export const DIRECTORIES = [
   USERPROFILE && `${USERPROFILE}\\Desktop\\`,
   APPDATA && `${APPDATA}\\Microsoft\\Windows\\Start Menu\\Programs\\`,
-  ProgramData && `${ProgramData}\\Microsoft\\Windows\\Start Menu\\Programs\\`
+  ProgramData && `${ProgramData}\\Microsoft\\Windows\\Start Menu\\Programs\\`,
+  ProgramData && `${ProgramData}\\chocolatey\\bin\\`
 ].filter(dir => !!dir)
 
-export const EXTENSIONS = ['lnk', 'exe']
+export const EXTENSIONS = ['lnk', 'LNK', 'exe', 'EXE']
 
 export const openApp = (app) => shell.openItem(app.source)
 
@@ -41,5 +42,5 @@ export const formatPath = (filePath) => ({
   // TODO: check if file is hidden or not
   hidden: false,
   filename: path.basename(filePath),
-  name: path.basename(filePath).replace(/\.(exe|lnk)/, ''),
+  name: path.basename(filePath).replace(/\.(exe|EXE|lnk|LNK)/, ''),
 })
