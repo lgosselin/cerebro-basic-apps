@@ -1,6 +1,6 @@
 {
   "name": "cerebro-basic-apps",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Basic plugin for search and launch applications  with Cerebro app",
   "license": "MIT",
   "repository": "KELiON/cerebro-basic-apps",
@@ -27,12 +27,12 @@
     "applications"
   ],
   "devDependencies": {
-    "cerebro-scripts": "^0.0.11",
-    "rimraf": "^2.6.1"
+    "cerebro-scripts": "^0.0.25",
+    "rimraf": "^2.6.3"
   },
   "dependencies": {
     "cerebro-tools": "^0.1.0",
     "cerebro-ui": "^0.0.16",
-    "du": "^0.1.0"
+    "du": "^1.0.0"
   }
 }
